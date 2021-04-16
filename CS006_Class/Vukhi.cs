@@ -9,6 +9,25 @@ namespace CS006_Class
         int dosatthuong = 0;
         //PHUONG THUC
         //Phuong thuc khoi tao mac dinh
+        
+        //THUOC TINH
+        public int Satthuong
+        {
+            //khi thiet lap
+            //neu khong co set, chi cho phep doc
+            set
+            {
+                dosatthuong = value;
+            }
+            //khi truy cap
+            //neu khong co get, chi cho phep ghi
+            get
+            {
+                return dosatthuong;
+            }
+        }
+
+        public string Noisanxuat{set; get;}
         public Vukhi()
         {
             Console.WriteLine("Khoi tao");
@@ -42,25 +61,5 @@ namespace CS006_Class
             }
             Console.WriteLine();
         }
-        //THUOC TINH
-        public int Satthuong
-        {
-            //khi thiet lap
-            //neu khong co set, chi cho phep doc
-            set
-            {
-                dosatthuong = value;
-            }
-            //khi truy cap
-            //neu khong co get, chi cho phep ghi
-            get
-            {
-                return dosatthuong;
-            }
-        }
-
-        public string Noisanxuat{set; get;}
-
-
     }
 }
